@@ -1,0 +1,8 @@
+<table>
+  <app-childcontainer (onAddObj)="add($event)"> </app-childcontainer>
+  <app-row
+    *ngFor="let addobj of addobjs"
+    [addobj]="addobj"
+    (onDeleteObj)="deleteObj(addobj)"
+  ></app-row>
+</table>
